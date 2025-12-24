@@ -1,4 +1,4 @@
-FROM apache/apisix:3.9.1
+FROM apache/apisix:3.14.1-ubuntu
 
 COPY ./conf/config.yaml /usr/local/apisix/conf/config.yaml
 COPY ./conf/plugins /usr/local/apisix/conf/plugins/
