@@ -1,4 +1,4 @@
-FROM apache/apisix:3.3-alpine
+FROM apache/apisix:3.3
 
 COPY ./conf/config.yaml /usr/local/apisix/conf/config.yaml
 
