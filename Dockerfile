@@ -1,4 +1,7 @@
+# build trigger test - v1
 FROM apache/apisix:3.14.1-ubuntu
+
+# test auto redeploy
 
 COPY ./config.yaml /usr/local/apisix/conf/config.yaml
 
