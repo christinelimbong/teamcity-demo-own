@@ -7,4 +7,4 @@ COPY ./config.yaml /usr/local/apisix/conf/config.yaml
 
 EXPOSE 9080 9180
 
-CMD ["sh", "-c", "apisix start -c /usr/local/apisix/conf/config.yaml"]
+CMD ["sh", "-c", "apisix start -c /usr/local/apisix/conf/config.yaml && tail -f /dev/null"]
