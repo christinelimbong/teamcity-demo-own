@@ -1,20 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apisix
+  name: tomcat
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: apisix
+      app: tomcat
   template:
     metadata:
       labels:
-        app: apisix
+        app: tomcat
     spec:
       containers:
-      - name: apisix
-        image: 10.0.60.124:5000/teamcity-demo:__TAG__
+      - name: tomcat
+        image: 10.0.60.124:5000/teamcity-demo:latest
         ports:
-          - containerPort: 9080
-          - containerPort: 9180
+        - containerPort: 8080
