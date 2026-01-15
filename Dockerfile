@@ -1,4 +1,4 @@
-FROM tomcat:9.0-jdk17-temurin
+FROM 10.0.60.124:5000/apache/apisix:3.14.1-ubuntu
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
