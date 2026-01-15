@@ -1,11 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+<<<<<<< Updated upstream
   name: tomcat
+=======
+  name: teamcity-demo
+>>>>>>> Stashed changes
 spec:
   replicas: 1
   selector:
     matchLabels:
+<<<<<<< Updated upstream
       app: tomcat
   template:
     metadata:
@@ -14,6 +19,16 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: 10.0.60.124:5000/teamcity-demo:latest
+=======
+      app: teamcity-demo
+  template:
+    metadata:
+      labels:
+        app: teamcity-demo
+    spec:
+      containers:
+      - name: teamcity-demo
+>>>>>>> Stashed changes
+        image: 10.0.60.124:5000/teamcity-demo:%build.number%
         ports:
         - containerPort: 8080
