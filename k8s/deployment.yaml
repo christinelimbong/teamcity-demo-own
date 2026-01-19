@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: teamcity-demo
-        image: 10.0.60.124:5000/teamcity-demo:%env.DOCKER_TAG%
+        image: 10.0.60.124:5000/teamcity-demo:v1.0.1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
