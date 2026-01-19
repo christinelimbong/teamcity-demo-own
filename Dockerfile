@@ -9,7 +9,7 @@ ENV GIT_COMMIT=${GIT_COMMIT}
 RUN rm -rf /usr/local/tomcat/webapps/*
 RUN mkdir -p /usr/local/tomcat/webapps/ROOT
 
-RUN echo "<h1>Tomcat from TeamCity Build</h1>" \
+RUN echo "<h1>Tomcat AUTO REDEPLOY OK</h1>" \
     "<p>Version: ${DOCKER_TAG}</p>" \
     "<p>Commit: ${GIT_COMMIT}</p>" \
     > /usr/local/tomcat/webapps/ROOT/index.html
