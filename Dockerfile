@@ -9,7 +9,7 @@ ENV GIT_COMMIT=${GIT_COMMIT}
 RUN rm -rf /usr/local/tomcat/webapps/*
 RUN mkdir -p /usr/local/tomcat/webapps/ROOT
 
-RUN echo "<h1>Tomcat AUTO REDEPLOY OK</h1>" \
+RUN echo "<h1>Tomcat TAG TEST v1.0.7 AUTO REDEPLOY OK</h1>" \
     "<p>Version TAG: ${DOCKER_TAG}</p>" \
     "<p>Commit: ${GIT_COMMIT}</p>" \
     > /usr/local/tomcat/webapps/ROOT/index.html
